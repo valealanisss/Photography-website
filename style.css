@@ -371,3 +371,25 @@ main {
   position: relative;
   transition: color 0.2s ease;
 }
+
+/* Fix nav dropdown overflow */
+@media (max-width: 768px) {
+  .nav_list {
+    right: 0;
+    left: auto;
+    width: 100vw;      /* keep inside screen */
+    max-width: 100%;   /* prevent overflow */
+    box-sizing: border-box;
+  }
+}
+
+/* Fix photo grid on mobile */
+@media (max-width: 600px) {
+  .photo-grid {
+    column-gap: 0; /* removes extra padding-look */
+  }
+  .photo-grid img {
+    margin: 0 0 30px 0; /* no auto horizontal margin */
+    width: 100%;        /* take full width of column */
+  }
+}
