@@ -383,13 +383,16 @@ main {
   }
 }
 
-/* Fix photo grid on mobile */
 @media (max-width: 600px) {
   .photo-grid {
-    column-gap: 0; /* removes extra padding-look */
+    column-count: 1;
+    column-gap: 0;         /* no extra gap */
   }
+
   .photo-grid img {
-    margin: 0 0 30px 0; /* no auto horizontal margin */
-    width: 100%;        /* take full width of column */
+    display: block;
+    margin: 0 auto 30px auto;  /* center each image */
+    width: auto;               /* don’t force 100% width */
+    max-width: 90%;            /* scale down if too big */
   }
 }
