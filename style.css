@@ -370,28 +370,3 @@ main {
   position: relative;
   transition: color 0.2s ease;
 }
-
-/* Fix nav dropdown overflow */
-@media (max-width: 768px) {
-  .nav_list {
-    right: 0;
-    left: auto;
-    width: 100vw;      /* keep inside screen */
-    max-width: 100%;   /* prevent overflow */
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 600px) {
-  .photo-grid {
-    column-count: 1;
-    column-gap: 0;         /* no extra gap */
-  }
-
-  .photo-grid img {
-    display: block;
-    margin: 0 auto 30px auto;  /* center each image */
-    width: auto;               /* don’t force 100% width */
-    max-width: 90%;            /* scale down if too big */
-  }
-}
