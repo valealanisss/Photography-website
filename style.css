@@ -162,10 +162,6 @@ main {
   break-inside: avoid;
   cursor: zoom-in;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  break-inside: avoid;
-  -webkit-column-break-inside: avoid; /* Safari/WebKit */
-  -moz-column-break-inside: avoid;    /* Firefox */
 }
 .photo-grid img:hover {
   transform: scale(1.03);
